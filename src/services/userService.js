@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const API_URL = 'https://reqres.in/api';
 
-export default {
+const userService = {
   getUsers: async (page) => {
     const response = await axios.get(`${API_URL}/users?page=${page}`);
     return response.data;
@@ -18,3 +18,5 @@ export default {
     await axios.delete(`${API_URL}/users/${id}`);
   },
 };
+
+export default userService;
