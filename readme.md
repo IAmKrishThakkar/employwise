@@ -2,7 +2,7 @@
 
 A React-based frontend application for user authentication and management, integrated with the Reqres API. Implements modern UI practices with Material-UI and Framer Motion animations.
 
-[🔗 Live Demo](https://yourapp.com)
+[🔗 Live Demo](https://employwisekrish.netlify.app/users)
 
 ## Features
 
@@ -140,5 +140,5 @@ MIT License - Feel free to modify and use as needed.
 
 *Created as part of the EmployWise technical assessment*
 
-*[Hosted Demo](https://yourapp.herokuapp.com) • [API Docs](https://reqres.in/)*
+*[Hosted Demo](https://employwisekrish.netlify.app/users) *
 
