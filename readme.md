@@ -2,7 +2,8 @@
 
 A React-based frontend application for user authentication and management, integrated with the Reqres API. Implements modern UI practices with Material-UI and Framer Motion animations.
 
-[🔗 Live Demo](https://employwisekrish.netlify.app/users)
+*[Demo Demo](https://employwisekrish.netlify.app/) *
+<iframe src="https://employwisekrish.netlify.app" width="100%" height="500px" style="border:none;"></iframe>
 
 ## Features
 
@@ -47,7 +48,6 @@ A React-based frontend application for user authentication and management, integ
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/employwise.git
-   cd employwise-assignment
    ```
 
 2. Install dependencies:
@@ -140,5 +140,5 @@ MIT License - Feel free to modify and use as needed.
 
 *Created as part of the EmployWise technical assessment*
 
-*[Hosted Demo](https://employwisekrish.netlify.app/users) *
+
 
