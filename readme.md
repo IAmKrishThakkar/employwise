@@ -47,7 +47,7 @@ A React-based frontend application for user authentication and management, integ
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/employwise.git
-   cd employwise
+   cd employwise-assignment
    ```
 
 2. Install dependencies:
