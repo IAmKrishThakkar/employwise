@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import LoginPage from './pages/LoginPage';
+import UserListPage from './pages/UserListPage';
+import EditUserPage from './pages/EditUserPage';
+import Navbar from './components/Navbar';
+import theme from './theme';
+
+
+function PrivateRoute({ children }) {
+  const isAuthenticated = !!localStorage.getItem('token');
+  return isAuthenticated ? children : <Navigate to="/" />;
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route
+            path="/users"
+            element={
+              <PrivateRoute>
+                <Navbar />
+                <UserListPage />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/users/:id/edit"
+            element={
+              <PrivateRoute>
+                <Navbar />
+                <EditUserPage />
+              </PrivateRoute>
+            }
+          />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 
