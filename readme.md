@@ -2,8 +2,7 @@
 
 A React-based frontend application for user authentication and management, integrated with the Reqres API. Implements modern UI practices with Material-UI and Framer Motion animations.
 
-*[Demo Demo](https://employwisekrish.netlify.app/) *
-<iframe src="https://employwisekrish.netlify.app" width="100%" height="500px" style="border:none;"></iframe>
+*[Live Demo](https://employwisekrish.netlify.app/) *
 
 ## Features
 
