@@ -5,7 +5,6 @@ import {
     Box,
     TextField,
     FormControl,
-    InputLabel,
     Select,
     MenuItem,
     CircularProgress,
